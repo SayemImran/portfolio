@@ -52,7 +52,7 @@ export default function Hero() {
               transition={{ duration: 0.5, ease: "circOut" }}
               className="text-[clamp(1rem,2vw,1.3rem)] font-light text-white/60 tracking-wide"
             >
-              Professional <span className="text-accent2 font-medium">{roles[roleIndex]}</span>
+               <span className="text-accent2 font-medium">{roles[roleIndex]}</span>
             </motion.p>
           </AnimatePresence>
         </div>
@@ -68,6 +68,9 @@ export default function Hero() {
           </a>
           <a href="#contact" className="px-8 py-3.5 rounded-xl bg-white/[0.02] border border-white/10 text-white font-semibold text-[0.8rem] no-underline hover:bg-white/[0.05] transition-all backdrop-blur-md interactive">
             Contact
+          </a>
+          <a href="#" className="px-8 py-3.5 rounded-xl bg-white/[0.02] border border-white/10 text-white font-semibold text-[0.8rem] no-underline hover:bg-white/[0.05] transition-all backdrop-blur-md interactive">
+            Download CV
           </a>
         </motion.div>
 
