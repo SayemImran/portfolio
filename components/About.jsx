@@ -47,6 +47,15 @@ export default function About() {
             <p>
               I thrive on the challenge of taking a complex idea and turning it into a polished, high-performance reality. For me, every project is an opportunity to push the boundaries of <span className="text-white font-normal">UI/UX</span> and modern web technologies.
             </p>
+            <p>
+              My programming journey began with curiosity and evolved through relentless self-learning. I love diving deep into <span className="text-white font-normal">full-stack development</span>, where I can architect both the frontend magic and the backend logic that powers it. The satisfaction of seeing a concept transform into a seamless user experience is what drives me every day.
+            </p>
+            <p>
+              Beyond the screen, I find inspiration in the world around me. I&apos;m passionate about <span className="text-white font-normal">travelling</span> to new places, discovering different cultures, and letting fresh perspectives fuel my creativity. When I&apos;m not coding, you&apos;ll find me immersed in <span className="text-white font-normal">esports games</span>, strategizing and competing in virtual worlds that mirror the problem-solving I love in development.
+            </p>
+            <p>
+              I also enjoy <span className="text-white font-normal">cooking delicious meals</span>, experimenting with flavors and techniques that bring people together. This blend of technical precision in code and culinary creativity reflects my personality—someone who approaches challenges with enthusiasm, attention to detail, and a touch of adventure.
+            </p>
           </div>
         </motion.div>
 
