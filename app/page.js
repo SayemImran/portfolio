@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import Hero from '@/components/Hero';
 import Works from '@/components/Works';
 import Skills from '@/components/Skills';
+import Education from '@/components/Education';
 import About from '@/components/About';
 import Contact from '@/components/Contact';
 import Footer from '@/components/Footer';
@@ -36,6 +37,7 @@ export default function Home() {
       <Navbar />
       <Hero />
       <Skills />
+      <Education />
       <Works />
       <About />
       <Contact />
