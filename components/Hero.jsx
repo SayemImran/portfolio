@@ -16,12 +16,12 @@ export default function Hero() {
   }, []);
 
   return (
-    <section id="home" className="min-h-[90vh] flex items-center px-6 md:px-14 pt-[120px] lg:pt-0 pb-12 relative overflow-hidden">
+    <section id="home" className="min-h-screen lg:min-h-[90vh] flex items-center px-6 md:px-14 pt-[100px] lg:pt-0 pb-12 relative overflow-hidden">
       {/* Background Decor */}
       <div className="absolute top-1/4 -right-20 w-[500px] h-[500px] bg-accent/5 rounded-full blur-[140px] pointer-events-none -z-10" />
       <div className="absolute bottom-1/4 -left-20 w-[400px] h-[400px] bg-accent2/5 rounded-full blur-[120px] pointer-events-none -z-10" />
 
-      <div className="w-full max-w-6xl mx-auto flex flex-col lg:flex-row items-center gap-12 lg:gap-8">
+      <div className="w-full max-w-6xl mx-auto flex flex-col-reverse lg:flex-row items-center gap-16 lg:gap-8">
         <div className="flex-1 z-10 text-center lg:text-left">
           <motion.div 
             initial={{ opacity: 0, y: 10 }}
@@ -37,10 +37,10 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="text-[clamp(2.5rem,8vw,4.5rem)] font-light leading-[1] tracking-tight mb-6 text-white"
+            className="text-[clamp(3rem,10vw,5rem)] font-light leading-[0.9] tracking-tight mb-8 text-white"
           >
             SAYEM <br />
-            <span className="text-white/40 font-semibold tracking-tighter">IMRAN KHAN.</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-white/40 via-white to-white/40 font-semibold tracking-tighter">IMRAN KHAN.</span>
           </motion.h1>
 
           <div className="h-[40px] mb-10 overflow-hidden">
@@ -62,7 +62,7 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="flex flex-wrap justify-center lg:justify-start gap-4"
+            className="flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-4"
           >
             <a href="#works" className="px-8 py-3.5 rounded-xl bg-white text-black font-semibold text-[0.8rem] no-underline hover:bg-white/90 transition-all shadow-xl interactive">
               View Projects
@@ -74,21 +74,20 @@ export default function Hero() {
               Download CV
             </a>
           </motion.div>
-
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="grid grid-cols-3 gap-px mt-16 max-w-xs mx-auto lg:mx-0 bg-white/5 border border-white/5 rounded-2xl overflow-hidden backdrop-blur-3xl"
+            className="grid grid-cols-3 gap-px mt-12 lg:mt-16 max-w-sm mx-auto lg:mx-0 bg-white/5 border border-white/5 rounded-2xl overflow-hidden backdrop-blur-3xl group/stats"
           >
             {[
-              { label: 'Indie Dev', value: '2+ Yrs' },
+              { label: 'Experience', value: '2+ Yrs' },
               { label: 'Projects', value: '15+' },
               { label: 'Tools', value: '10+' }
             ].map((stat, i) => (
-              <div key={i} className="bg-bg/40 p-4 text-center">
-                <div className="text-lg font-semibold text-white mb-0.5">{stat.value}</div>
-                <div className="text-[0.55rem] text-white/20 font-bold uppercase tracking-widest">{stat.label}</div>
+              <div key={i} className="bg-bg/40 p-5 text-center transition-colors hover:bg-white/[0.03]">
+                <div className="text-xl font-semibold text-white mb-0.5 tracking-tight">{stat.value}</div>
+                <div className="text-[0.6rem] text-white/20 font-bold uppercase tracking-widest leading-none">{stat.label}</div>
               </div>
             ))}
           </motion.div>
@@ -96,9 +95,17 @@ export default function Hero() {
 
         <motion.div 
           initial={{ opacity: 0, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-          className="relative w-full max-w-[400px] aspect-square mx-auto lg:mx-0"
+          animate={{ 
+            opacity: 1, 
+            scale: 1,
+            y: [0, -15, 0]
+          }}
+          transition={{ 
+            opacity: { duration: 1, delay: 0.2 },
+            scale: { duration: 1, delay: 0.2 },
+            y: { duration: 6, repeat: Infinity, ease: "easeInOut" }
+          }}
+          className="relative w-full max-w-[320px] md:max-w-[400px] aspect-square mx-auto lg:mx-0"
         >
           <div className="absolute -inset-[1px] rounded-[3rem] bg-gradient-to-r from-accent/40 via-accent2/40 to-accent3/40 bg-[length:200%_auto] animate-border-flow opacity-30 blur-[1px]" />
           
