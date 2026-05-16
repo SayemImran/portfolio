@@ -31,13 +31,22 @@ const projects = [
     live: 'https://keen-keeper-ten-pi.vercel.app/',
     code: 'https://github.com/SayemImran/keen-keeper'
   },
+  {
+    id: '04',
+    title: 'Qurbani Hut',
+    desc: 'A full-stack web application that simplifies the process of sacrificing animals for religious purposes, providing a seamless and user-friendly platform for customers to book and manage their qurbani orders.',
+    tags: ['Next.JS', 'TailwindCSS', 'BetterAuth','MongoDB'],
+    image: '/qurbani.png',
+    live: 'https://qurbanihut.vercel.app/',
+    code: 'https://github.com/SayemImran/qurbanihut'
+  }
 ];
 
 export default function Works() {
   return (
     <section id="works" className="px-6 md:px-14 py-20 md:py-24 max-w-6xl mx-auto relative">
       <div className="mb-12">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: -10 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
@@ -45,7 +54,7 @@ export default function Works() {
         >
           Selected Work
         </motion.div>
-        <motion.h2 
+        <motion.h2
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -54,7 +63,7 @@ export default function Works() {
         >
           Projects I&apos;ve <span className="text-white/30 font-medium">Built</span>
         </motion.h2>
-        <motion.p 
+        <motion.p
           initial={{ opacity: 0, y: 15 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
