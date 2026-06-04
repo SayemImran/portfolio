@@ -64,14 +64,14 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
             className="flex flex-wrap justify-center lg:justify-start gap-3 sm:gap-4"
           >
-            <a href="#works" className="px-8 py-3.5 rounded-xl bg-white text-black font-semibold text-[0.8rem] no-underline hover:bg-white/90 transition-all shadow-xl interactive">
+            <a href="#works" className="px-8 py-3.5 rounded-xl bg-white text-black font-semibold text-[0.8rem] no-underline hover:bg-white/90 transition-all shadow-xl">
               View Projects
             </a>
-            <a href="#contact" className="px-8 py-3.5 rounded-xl bg-white/[0.02] border border-white/10 text-white font-semibold text-[0.8rem] no-underline hover:bg-white/[0.05] transition-all backdrop-blur-md interactive">
+            <a href="#contact" className="px-8 py-3.5 rounded-xl bg-white/[0.02] border border-white/10 text-white font-semibold text-[0.8rem] no-underline hover:bg-white/[0.05] transition-all backdrop-blur-md">
               Contact
             </a>
-            <a href="#" className="px-8 py-3.5 rounded-xl bg-white/[0.02] border border-white/10 text-white font-semibold text-[0.8rem] no-underline hover:bg-white/[0.05] transition-all backdrop-blur-md interactive">
-              Download CV
+            <a href="https://drive.google.com/file/d/1V5CFo4DU3au0hKEJS7MTlw9oJOWwYFmP/view?usp=sharing" className="px-8 py-3.5 rounded-xl bg-white/[0.02] border border-white/10 text-white font-semibold text-[0.8rem] no-underline hover:bg-white/[0.05] transition-all backdrop-blur-md">
+              Resume
             </a>
           </motion.div>
           <motion.div 

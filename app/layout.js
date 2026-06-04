@@ -8,14 +8,12 @@ export const metadata = {
 };
 
 import SmoothScroll from "@/components/SmoothScroll";
-import CustomCursor from "@/components/CustomCursor";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`} suppressHydrationWarning>
       <body className={`${GeistSans.className} antialiased selection:bg-accent/30`}>
         <SmoothScroll>
-          <CustomCursor />
           {children}
         </SmoothScroll>
       </body>

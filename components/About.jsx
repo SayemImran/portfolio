@@ -72,7 +72,7 @@ export default function About() {
               viewport={{ once: true }}
               transition={{ delay: 0.3 + (index * 0.1) }}
               whileHover={{ x: 5, backgroundColor: 'rgba(255, 255, 255, 0.03)' }}
-              className="bg-white/[0.01] border border-white/5 rounded-[1.5rem] p-5 flex items-start gap-4 transition-colors group cursor-none interactive"
+              className="bg-white/[0.01] border border-white/5 rounded-[1.5rem] p-5 flex items-start gap-4 transition-colors group"
             >
               <div className="w-10 h-10 rounded-xl flex-shrink-0 bg-white/5 border border-white/5 flex items-center justify-center text-lg shadow-inner group-hover:bg-accent/10 transition-all">
                 {card.icon}

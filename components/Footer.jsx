@@ -28,7 +28,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ y: -3, backgroundColor: 'rgba(255, 255, 255, 0.05)' }}
-              className="w-12 h-12 rounded-xl bg-white/[0.02] border border-white/5 flex items-center justify-center text-white/30 hover:text-white transition-all interactive cursor-none"
+              className="w-12 h-12 rounded-xl bg-white/[0.02] border border-white/5 flex items-center justify-center text-white/30 hover:text-white transition-all"
               title={social.name}
             >
               {social.icon}
@@ -52,7 +52,7 @@ export default function Footer() {
               <a 
                 key={item}
                 href={`#${item.toLowerCase()}`}
-                className="text-[0.65rem] font-medium text-white/20 hover:text-white/50 transition-colors uppercase tracking-[0.25em] no-underline interactive"
+                className="text-[0.65rem] font-medium text-white/20 hover:text-white/50 transition-colors uppercase tracking-[0.25em] no-underline"
               >
                 {item}
               </a>

@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const TechItem = ({ name, icon }) => (
   <motion.div
     whileHover={{ y: -5, scale: 1.02 }}
-    className="flex items-center gap-4 p-4 rounded-2xl bg-white/[0.02] border border-white/5 backdrop-blur-xl transition-all hover:bg-white/[0.05] hover:border-white/10 group cursor-none interactive"
+    className="flex items-center gap-4 p-4 rounded-2xl bg-white/[0.02] border border-white/5 backdrop-blur-xl transition-all hover:bg-white/[0.05] hover:border-white/10 group"
   >
     <div className="w-10 h-10 rounded-xl flex items-center justify-center bg-white/[0.03] border border-white/5 group-hover:shadow-[0_0_20px_rgba(255,255,255,0.05)] transition-all overflow-hidden p-2">
       <div className="w-full h-full flex items-center justify-center">

@@ -10,7 +10,7 @@ export default function WorkCard({ project, index }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.8, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
-      className="group rounded-[2rem] bg-white/[0.01] border border-white/5 overflow-hidden backdrop-blur-xl transition-all duration-500 hover:border-white/10 hover:shadow-2xl hover:shadow-accent/5 cursor-none interactive"
+      className="group rounded-[2rem] bg-white/[0.01] border border-white/5 overflow-hidden backdrop-blur-xl transition-all duration-500 hover:border-white/10 hover:shadow-2xl hover:shadow-accent/5"
     >
       <div className="relative aspect-[16/9] overflow-hidden bg-[#0d1525]">
         <Image 

@@ -32,7 +32,7 @@ export default function Contact() {
           <div className="flex flex-wrap gap-3 justify-center">
             <a
               href="mailto:sayemimrankhan@gmail.com"
-              className="flex items-center gap-2.5 px-6 py-3 rounded-xl bg-accent text-white font-medium text-[0.8rem] no-underline shadow-lg shadow-accent/10 hover:bg-accent/90 transition-all interactive"
+              className="flex items-center gap-2.5 px-6 py-3 rounded-xl bg-accent text-white font-medium text-[0.8rem] no-underline shadow-lg shadow-accent/10 hover:bg-accent/90 transition-all"
             >
               <svg
                 width="14"
@@ -54,7 +54,7 @@ export default function Contact() {
                 href="https://github.com/sayemimran"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center w-12 h-12 rounded-xl bg-white/5 border border-white/5 text-white/40 hover:text-white hover:bg-white/10 transition-all interactive"
+                className="flex items-center justify-center w-12 h-12 rounded-xl bg-white/5 border border-white/5 text-white/40 hover:text-white hover:bg-white/10 transition-all"
               >
                 <svg
                   width="18"
@@ -74,7 +74,7 @@ export default function Contact() {
                 href="https://linkedin.com/in/sayem-imran-khan"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center justify-center w-12 h-12 rounded-xl bg-white/5 border border-white/5 text-white/40 hover:text-white hover:bg-white/10 transition-all interactive"
+                className="flex items-center justify-center w-12 h-12 rounded-xl bg-white/5 border border-white/5 text-white/40 hover:text-white hover:bg-white/10 transition-all"
               >
                 <svg
                   width="18"

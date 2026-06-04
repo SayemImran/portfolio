@@ -55,7 +55,6 @@
     color: var(--color-text);
     font-family: var(--font-geist-sans);
     @apply font-normal overflow-x-hidden leading-relaxed;
-    cursor: none;
   }
 }
 
