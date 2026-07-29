@@ -70,7 +70,7 @@ export default function Hero() {
             <a href="#contact" className="px-8 py-3.5 rounded-xl bg-white/[0.02] border border-white/10 text-white font-semibold text-[0.8rem] no-underline hover:bg-white/[0.05] transition-all backdrop-blur-md">
               Contact
             </a>
-            <a href="https://drive.google.com/file/d/1WdQnmZWKEDcajgNr5cBkYS2UQxSv7qRg/view?usp=sharing" className="px-8 py-3.5 rounded-xl bg-white/[0.02] border border-white/10 text-white font-semibold text-[0.8rem] no-underline hover:bg-white/[0.05] transition-all backdrop-blur-md">
+            <a href="https://drive.google.com/file/d/1rjaV2YPPa3AYZPB3jEsaMKkdIQgBabC7/view?usp=sharing" className="px-8 py-3.5 rounded-xl bg-white/[0.02] border border-white/10 text-white font-semibold text-[0.8rem] no-underline hover:bg-white/[0.05] transition-all backdrop-blur-md">
               Resume
             </a>
           </motion.div>
