@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
 
 export default function WorkCard({ project, index }) {
@@ -30,49 +31,19 @@ export default function WorkCard({ project, index }) {
         </span>
       </div>
 
-      <div className="p-6 md:p-8">
-        <div className="flex gap-2 flex-wrap mb-4">
-          {project.tags.map((tag, i) => (
-            <span
-              key={i}
-              className="px-2.5 py-0.5 rounded-full text-[0.6rem] font-medium uppercase tracking-wider bg-white/5 border border-white/5 text-white/30"
-            >
-              {tag}
-            </span>
-          ))}
-        </div>
-
-        <h3 className="font-normal text-lg md:text-xl tracking-tight mb-2 text-white/90">
+      <div className="p-6 md:p-8 flex flex-col justify-between items-start gap-4">
+        <h3 className="font-normal text-lg md:text-xl tracking-tight text-white/90">
           {project.title}
         </h3>
 
-        <p className="text-[0.85rem] text-white/30 font-light leading-relaxed mb-6 line-clamp-2">
-          {project.desc}
-        </p>
-
-        <div className="flex gap-2">
-          <a
-            href={project.live}
-            className="flex items-center gap-2 px-5 py-2 rounded-lg bg-accent/80 text-white font-medium text-[0.75rem] no-underline hover:bg-accent transition-all"
-          >
-            Live
-          </a>
-          <a
-            href={project.code}
-            className="flex items-center gap-2 px-5 py-2 rounded-lg bg-white/5 border border-white/5 text-white/60 font-medium text-[0.75rem] no-underline hover:bg-white/10 transition-all"
-          >
-            Code
-          </a>
-          {project.server && (
-            <a
-              href={project.server}
-              className="flex items-center gap-2 px-5 py-2 rounded-lg bg-white/5 border border-white/5 text-white/60 font-medium text-[0.75rem] no-underline hover:bg-white/10 transition-all"
-            >
-              Server
-            </a>
-          )}
-        </div>
+        <Link
+          href={`/projects/${project.id}`}
+          className="inline-flex items-center justify-center px-6 py-2.5 rounded-xl bg-accent text-white font-medium text-[0.8rem] tracking-wide no-underline hover:bg-accent/80 hover:scale-[1.02] active:scale-[0.98] transition-all duration-300 shadow-lg shadow-accent/20"
+        >
+          View More / Details
+        </Link>
       </div>
     </motion.div>
   );
 }
+

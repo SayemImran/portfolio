@@ -3,64 +3,7 @@
 import { motion } from "framer-motion";
 import WorkCard from "./WorkCard";
 
-const projects = [
-  {
-    id: "01",
-    title: "Blood Drops",
-    desc: "Full-stack blood management system with JWT authentication and donation feature.",
-    tags: ["Django", "Python", "ReactJS", "PostgreSQL"],
-    image: "/bloodDrops.png",
-    live: "https://blooddrops.vercel.app/",
-    code: "https://github.com/SayemImran/Blood-Drops",
-  },
-  {
-    id: "02",
-    title: "DigiTools",
-    desc: "Digital tools marketplace built with modern web standards.",
-    tags: ["ReactJS", "TailwindCSS"],
-    image: "/digitools.png",
-    live: "https://digitools-by-imran.netlify.app/",
-    code: "https://github.com/SayemImran/digitools",
-  },
-  {
-    id: "03",
-    title: "Keen Keeper",
-    desc: "A social application to keep your friends close.",
-    tags: ["Next.JS", "TailwindCSS"],
-    image: "/keenkeeper.png",
-    live: "https://keen-keeper-ten-pi.vercel.app/",
-    code: "https://github.com/SayemImran/keen-keeper",
-  },
-  {
-    id: "04",
-    title: "Qurbani Hut",
-    desc: "A full-stack web application that simplifies the process of sacrificing animals for religious purposes, providing a seamless and user-friendly platform for customers to book and manage their qurbani orders.",
-    tags: ["Next.JS", "TailwindCSS", "BetterAuth", "MongoDB"],
-    image: "/qurbani.png",
-    live: "https://qurbanihut-bd.vercel.app/",
-    code: "https://github.com/SayemImran/qurbanihut",
-  },
-  {
-    id: "05",
-    title: "Petverse",
-    desc: "A digtital SaaS platform for pet adoption",
-    tags: ["Next.JS", "TailwindCSS", "BetterAuth", "MongoDB", "JWT","Sonner","HeroUI"],
-    image: "/petverse.png",
-    live: "https://petverse-bd.vercel.app/",
-    code: "https://github.com/SayemImran/petverse/",
-    server: "https://github.com/SayemImran/petverse-server/",
-  },
-  {
-    id: "06",
-    title: "Resell Hub",
-    desc: "A digtital SaaS platform for buying and selling used goods",
-    tags: ["Next.JS", "TailwindCSS", "BetterAuth", "MongoDB", "JWT","Stirpe","Sonner","HeroUI"],
-    image: "/resellhub.png",
-    live: "https://resell-hub-bd.vercel.app/",
-    code: "https://github.com/SayemImran/resell-hub-client/",
-    server: "https://github.com/SayemImran/resell-hub-server/",
-  },
-];
+import { projects } from "@/data/projects";
 
 export default function Works() {
   return (
